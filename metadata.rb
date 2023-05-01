@@ -7,8 +7,8 @@ version '3.1.2'
 
 source_url 'https://github.com/chef-cookbooks/chef-vault'
 issues_url 'https://github.com/chef-cookbooks/chef-vault/issues'
-chef_version '>= 12.9'
+chef_version '>= 12.1' if respond_to?(:chef_version)
 
-gem 'chef-vault', '< 4.0'
+gem 'chef-vault', '~> 3.4.3'
 
 supports 'any'
